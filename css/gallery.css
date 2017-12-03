@@ -1,0 +1,23 @@
+.btn_white { background-color: #ffffff; color: #000; transition: background-color 0.3s ease 0s, color 0.3s ease 0s; }
+.btn_white:hover { background-color: #1e3571; color: #fff; }
+
+.gallery h1 { color: #1e3571; font-family: 'Trebuchet MS'; font-size: 34px; font-weight: bold; margin: 44px 0; }
+.gallery .gallery__nav li { margin-bottom: 10px; }
+.gallery .gallery__nav li a { display: block; padding: 10px 15px; font-family: 'Trebuchet MS'; font-size: 16px; font-weight: bold; color: #000000; background-color: #e0e0e0; border-radius: 4px; transition: background-color 0.3s ease 0s, color 0.3s ease 0s; text-decoration: none; }
+.gallery .gallery__nav li a:hover, .gallery .gallery__nav li a.active { background-color: #1e3571; color: #fff; }
+.gallery .gallery__items .grid-sizer { width: 33.333%; }
+.gallery .gallery__items .gallery__item { width: 33.333%; padding: 0 5px; margin-bottom: 10px; position: relative; overflow: hidden; }
+.gallery .gallery__items .gallery__item img { max-width: 100%; display: block; }
+.gallery .gallery__items .gallery__item .gallery__item-content { position: absolute; top: 0; left: 5px; right: 5px; height: 100%; background-color: rgba(0, 0, 0, 0.8); transition: opacity 0.3s ease 0s; opacity: 0; }
+.gallery .gallery__items .gallery__item .gallery__item-content .gallery__item-inner { position: absolute; top: 50%; transform: translateY(-50%); left: 0; width: 100%; text-align: center; padding: 10px; }
+.gallery .gallery__items .gallery__item .gallery__item-content h2 { transform: translateY(-40px); transition: transform 0.3s ease 0s; font-family: 'Trebuchet MS'; font-size: 24px; font-weight: bold; color: #fff; margin: 0 0 10px; }
+.gallery .gallery__items .gallery__item .gallery__item-content .gallery__item-bottom_content { transform: translateY(40px); transition: transform 0.3s ease 0s; font-family: 'Trebuchet MS'; font-size: 14px; color: #fff; }
+.gallery .gallery__items .gallery__item:hover .gallery__item-content { opacity: 1; }
+.gallery .gallery__items .gallery__item:hover .gallery__item-content .gallery__item-bottom_content, .gallery .gallery__items .gallery__item:hover .gallery__item-content h2 { transform: translateY(0px); }
+
+@media only screen and (max-width: 767px) { .gallery .gallery__items .grid-sizer, .gallery .gallery__items .gallery__item { width: 50%; }
+  .gallery .gallery__items .gallery__item { padding: 0 5px; }
+  .gallery .gallery__items .gallery__item .gallery__item-content h2 { font-size: 16px; }
+  .gallery .gallery__items .gallery__item .gallery__item-content .gallery__item-bottom_content { font-size: 12px; }
+  .gallery .gallery__items .gallery__item .gallery__item-content .gallery__item-bottom_content address { margin-bottom: 10px; } }
+@media only screen and (max-width: 480px) { .gallery .gallery__items .grid-sizer, .gallery .gallery__items .gallery__item { width: 100%; } }
