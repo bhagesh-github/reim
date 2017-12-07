@@ -1,0 +1,223 @@
+body{
+  background-color: #e9e9e9;
+  font-family:'Trebuchet MS';
+}
+.btn_gradient {
+  background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top, #ffffff 0%, #f0f0f0 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #ffffff 0%,#f0f0f0 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #ffffff 0%,#f0f0f0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f0f0f0',GradientType=0 );
+  color:#000;
+  transition:background 0.3s ease 0s, color 0.3s ease 0s;
+  box-shadow:1px 1px 6px rgba(0, 0, 0, 0.2);
+  &:hover {
+    background:#1e3571;
+    color:#fff;
+  }
+}
+
+.filter-box {
+  margin:35px 0;
+  text-align:center;
+  .filter-box__btns {
+    .btn {
+      margin:0 5px 20px;
+      font-weight:bold;
+    }
+  }
+  .filter-box__select {
+    label {
+      font: {
+        family:'Trebuchet MS';
+        size:16px;
+        weight:bold;
+      }
+    }
+    .chosen-container {
+      text-align:left;
+      margin-left:10px;
+      width:230px !important;
+      .chosen-single {
+        height:37px;
+        border-color:#b8b8b8;
+        line-height:34px;
+        font: {
+          family:'Trebuchet MS';
+          size:16px;
+          weight:bold;
+        }
+        box-shadow: none;
+        background: #e4e4e3; /* Old browsers */
+        background: -moz-linear-gradient(top, #e4e4e3 0%, #cfcfcf 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #e4e4e3 0%,#cfcfcf 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #e4e4e3 0%,#cfcfcf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4e4e3', endColorstr='#cfcfcf',GradientType=0 );
+        div {
+          width:38px;
+          border-left:1px solid #b8b8b8;
+          b {
+            background:none;
+            position:relative;
+            &:after {
+              content:"";
+              border-top:5px solid #000;
+              border-left:5px solid transparent;
+              border-right:5px solid transparent;
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              margin: -5px 0 0 -5px;
+            }
+          }
+        }
+      }
+      .chosen-drop {
+        border-color:#b8b8b8;
+      }
+      .chosen-results {
+        padding:0;
+        margin:0;
+        .active-result {
+          padding:10px;
+          &.highlighted,&.result-selected {
+              background:#1e3571;
+              color:#fff;
+          }
+        }
+      }
+    }
+  }
+}
+.panels {
+	.panels__box {
+		background: #ffffff; /* Old browsers */
+		background: -moz-linear-gradient(top, #ffffff 0%, #f8f8f8 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, #ffffff 0%,#f8f8f8 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, #ffffff 0%,#f8f8f8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f8f8f8',GradientType=0 );
+		min-height:345px;
+		border-radius:4px;
+		box-shadow:3px 3px 10px rgba(0,0,0,0.2);
+		margin-bottom:35px;
+		.panels__box__header {
+			padding:5px 15px;
+			border-bottom:1px solid #c9c9c9;
+			font: {
+			  family:'Trebuchet MS';
+			  size:22px;
+			  weight:bold;
+			}
+			img {
+				vertical-align:middle;
+				margin-right:5px;
+				margin-top:-6px;
+			}
+		}
+		.panels__box__body {
+			position:relative;
+			display:flex;
+			align-items:center;
+			height:302px;
+			.panels__box__graph {
+				width:56.47%;
+			}
+			.panels__box__progressbar {
+				width:43.53%;
+				padding-right:30px;
+				.progress{
+					margin-bottom:15px;
+					box-shadow:none;
+					height:25px;
+					background:none;
+					border-radius:0;
+				}
+				.progress-bar {
+					box-shadow:none;
+				}
+				.progress-bar_wip {
+					background-color:#13b896;
+				}
+				.progress-bar_stuck {
+					background-color:#e54c3e;
+				}
+				.progress-bar_done {
+					background-color:#eec018;
+				}
+				label {
+					font: {
+					  family:'Trebuchet MS';
+					  size:16px;
+					  weight:bold;
+					}
+					span {
+						display:inline-block;
+						width:50px;
+					}
+				}
+			}
+			.panels__box__table {
+				padding:0 35px;
+				width:100%;
+				table {
+					border:1px solid #fff;
+					border-collapse:collapse;
+					text-align:center;
+					width:100%;
+					th {
+						background-color:#354054;
+						color:#ffffff;
+						padding:15px;
+						text-align:center;
+						border:1px solid #fff;
+						font: {
+						  family:'Trebuchet MS';
+						  size:14px;
+						  weight:bold;
+						}
+					}
+					tbody {
+						tr {
+							td {
+								border:1px solid #fff;
+								font: {
+								  family:'Trebuchet MS';
+								  size:14px;
+								}
+								color:#252525;
+								padding:15px 10px;
+							}
+							&:nth-child(even) td {
+								background-color:#dee3e8;
+							}
+							&:nth-child(odd) td {
+								background-color:#eef1f9;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width:480px) {
+	.panels {
+		.panels__box {
+			.panels__box__header {
+				font-size:20px;
+			}
+			.panels__box__body {
+				height:auto;
+				display:block;
+				padding:30px;
+				.panels__box__graph,.panels__box__progressbar {
+					width:100%;
+					padding:0;
+				}
+				.panels__box__table {
+					padding:0;
+				}
+			}
+		}
+	}
+}

@@ -7,7 +7,9 @@
     color:#fff;
   }
 }
-
+body {
+  font-family:'Trebuchet MS';
+}
 .gallery {
   h1 {
     color:#1e3571;
@@ -106,6 +108,15 @@
   }
 }
 @media only screen and (max-width:767px) {
+  .gallery {
+    .gallery__nav {
+      text-align: center;
+      li {
+        margin-right:10px;
+        display: inline-block;
+      }
+    }
+  }
   .gallery .gallery__items{
     .grid-sizer,.gallery__item{
       width:50%;
@@ -129,6 +140,9 @@
 @media only screen and (max-width:480px) {
   .gallery .gallery__items{
     .grid-sizer,.gallery__item{
+      width:100%;
+    }
+    .gallery__item img {
       width:100%;
     }
   }

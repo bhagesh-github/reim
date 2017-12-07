@@ -1,6 +1,8 @@
 .btn_white { background-color: #ffffff; color: #000; transition: background-color 0.3s ease 0s, color 0.3s ease 0s; }
 .btn_white:hover { background-color: #1e3571; color: #fff; }
 
+body { font-family: 'Trebuchet MS'; }
+
 .gallery h1 { color: #1e3571; font-family: 'Trebuchet MS'; font-size: 34px; font-weight: bold; margin: 44px 0; }
 .gallery .gallery__nav li { margin-bottom: 10px; }
 .gallery .gallery__nav li a { display: block; padding: 10px 15px; font-family: 'Trebuchet MS'; font-size: 16px; font-weight: bold; color: #000000; background-color: #e0e0e0; border-radius: 4px; transition: background-color 0.3s ease 0s, color 0.3s ease 0s; text-decoration: none; }
@@ -15,9 +17,12 @@
 .gallery .gallery__items .gallery__item:hover .gallery__item-content { opacity: 1; }
 .gallery .gallery__items .gallery__item:hover .gallery__item-content .gallery__item-bottom_content, .gallery .gallery__items .gallery__item:hover .gallery__item-content h2 { transform: translateY(0px); }
 
-@media only screen and (max-width: 767px) { .gallery .gallery__items .grid-sizer, .gallery .gallery__items .gallery__item { width: 50%; }
+@media only screen and (max-width: 767px) { .gallery .gallery__nav { text-align: center; }
+  .gallery .gallery__nav li { margin-right: 10px; display: inline-block; }
+  .gallery .gallery__items .grid-sizer, .gallery .gallery__items .gallery__item { width: 50%; }
   .gallery .gallery__items .gallery__item { padding: 0 5px; }
   .gallery .gallery__items .gallery__item .gallery__item-content h2 { font-size: 16px; }
   .gallery .gallery__items .gallery__item .gallery__item-content .gallery__item-bottom_content { font-size: 12px; }
   .gallery .gallery__items .gallery__item .gallery__item-content .gallery__item-bottom_content address { margin-bottom: 10px; } }
-@media only screen and (max-width: 480px) { .gallery .gallery__items .grid-sizer, .gallery .gallery__items .gallery__item { width: 100%; } }
+@media only screen and (max-width: 480px) { .gallery .gallery__items .grid-sizer, .gallery .gallery__items .gallery__item { width: 100%; }
+  .gallery .gallery__items .gallery__item img { width: 100%; } }
